@@ -163,15 +163,15 @@ class RenderSync.View
 
   beforeUpdate: (html, data) -> @update(html)
 
-  afterUpdate: -> #noop
+  afterUpdate: -> alert('update');
 
   beforeInsert: ($el, data) -> @insert($el)
 
-  afterInsert: -> #noop
+  afterInsert: -> alert('insert');
 
   beforeRemove: -> @remove()
 
-  afterRemove: -> #noop
+  afterRemove: -> alert('remove');
 
   isRemoved: -> @removed
 
