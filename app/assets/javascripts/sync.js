@@ -290,6 +290,9 @@ RenderSync.View = (function() {
     this.$el.replaceWith($new);
     this.$el = $new;
     this.afterUpdate();
+    alert(this);
+    alert($new);
+    alert(html);
     return this.bind();
   };
 
