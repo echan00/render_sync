@@ -398,7 +398,7 @@ RenderSync.Partial = (function() {
   Partial.prototype.refetchFromServer = function(callback) {
     return $.ajax({
       type: "GET",
-      url: "/sync/refetch.json",
+      url: "/render_sync/refetch.json",
       data: {
         auth_token: this.authToken,
         partial_name: this.name,

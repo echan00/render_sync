@@ -1,4 +1,4 @@
-class Sync::RefetchesController < ApplicationController
+class RenderSync::RefetchesController < ApplicationController
 
   before_filter :require_valid_request
   before_filter :find_resource
